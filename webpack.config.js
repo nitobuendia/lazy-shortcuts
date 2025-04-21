@@ -1,4 +1,6 @@
 const path = require('path');
+const CopyPlugin = require('copy-webpack-plugin');
+
 
 module.exports = {
   mode: 'production',
@@ -12,6 +14,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
+    clean: true,
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
@@ -33,5 +36,14 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
     ],
-  }
+  },
+  plugins: [
+    new CopyPlugin({
+      patterns: [
+        { from: 'src/*.json',  to: '[name][ext]' },
+        { from: 'src/options/options.css', to: 'options.css' },
+        { from: 'src/options/options.html', to: 'options.html' },
+      ],
+    }),
+  ]
 };

@@ -16,6 +16,7 @@
     "@types/react-dom": "^19.1.2",
     "adm-zip": "^0.5.11",
     "babel-loader": "^10.0.0",
+    "copy-webpack-plugin": "^13.0.0",
     "css-loader": "^7.1.2",
     "style-loader": "^4.0.0",
     "ts-loader": "^9.5.1",
