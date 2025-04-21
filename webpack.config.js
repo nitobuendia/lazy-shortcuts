@@ -1,7 +1,10 @@
 const path = require('path');
-const { optimize } = require('webpack');
 
 module.exports = {
+  mode: 'production',
+  optimization: {
+    minimize: true,
+  },
   entry: {
     background: path.resolve(__dirname, 'src', 'background.ts'),
     options: path.resolve(__dirname, 'src', 'options/index.tsx'),
@@ -11,7 +14,7 @@ module.exports = {
     filename: '[name].js',
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.jsx'], // Add .tsx and .jsx
+    extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
   module: {
     rules: [
@@ -21,18 +24,14 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(js|jsx)$/, // Add rule for JavaScript/JSX
+        test: /\.(js|jsx)$/,
         use: 'babel-loader',
         exclude: /node_modules/,
       },
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'], // For handling CSS
+        use: ['style-loader', 'css-loader'],
       },
     ],
-  },
-  mode: 'production',
-  optimization: {
-    minimize: true,
   }
 };
