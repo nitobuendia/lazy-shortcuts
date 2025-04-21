@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Lazy Shortcuts",
+  "version": "1.0",
+  "description": "Lazy Shortcuts allows you to create local custom short URLs.",
+  "permissions": [
+    "storage",
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "redirectRules",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}

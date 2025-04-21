@@ -1,0 +1,71 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+h1, h2 {
+  margin-bottom: 15px;
+}
+
+#add-form div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+input[type="url"] {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.edit-form input[type="url"] {
+  width: 200px;
+}
+
+.edit-form button {
+  padding: 5px 10px;
+  font-size: 0.9em;
+}
+
+.edit-form label {
+  width: auto;
+  text-align: left;
+  margin-right: 5px;
+}
