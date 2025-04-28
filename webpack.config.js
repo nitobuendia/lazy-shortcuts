@@ -1,6 +1,8 @@
+/** @file Webpack configuration. */
+
 const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
-
+const extensionConfig = require('./extension.config');
 
 module.exports = {
   mode: 'production',
@@ -12,7 +14,7 @@ module.exports = {
     options: path.resolve(__dirname, 'src', 'options/index.tsx'),
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, extensionConfig.OUTPUT_BUILD_DIR),
     filename: '[name].js',
     clean: true,
   },

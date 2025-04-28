@@ -5,8 +5,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development --watch",
-    "package": "node scripts/package.js",
-    "start": "npm run build:dev"
+    "package": "node scripts/package.js"
   },
   "devDependencies": {
     "@babel/core": "^7.26.10",
