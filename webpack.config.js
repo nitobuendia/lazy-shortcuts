@@ -10,7 +10,6 @@ module.exports = {
     minimize: true,
   },
   entry: {
-    background: path.resolve(__dirname, 'src', 'background.ts'),
     options: path.resolve(__dirname, 'src', 'options/index.tsx'),
   },
   output: {
