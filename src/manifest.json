@@ -12,6 +12,9 @@
   "host_permissions": [
     "*://*/*"
   ],
+  "action": {
+    "default_popup": "options.html"
+  },
   "options_page": "options.html",
   "declarative_net_request": {
     "rule_resources": [
