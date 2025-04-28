@@ -1,7 +1,9 @@
+/** @file Options view. Main UI for the extenion. */
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import OptionsApp from './OptionsApp';
-import './options.css'; // Import your CSS here (or use CSS Modules)
+import OptionsApp from '@app/options/OptionsApp';
+import '@app/options/options.css';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

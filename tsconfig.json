@@ -4,6 +4,10 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "outDir": "./build",
+    "paths": {
+      "@app/*": ["./src/*"],
+    },
+
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,

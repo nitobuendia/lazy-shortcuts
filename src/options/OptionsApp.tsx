@@ -1,8 +1,8 @@
 /** @file Options app. Handles the UI for the extenion. */
 
 import React, { useState, useEffect, useCallback } from 'react';
-import { URLMapping } from '../types';
-import './options.css';
+import { URLMapping } from '@app/types';
+import '@app/options/options.css';
 
 interface Redirect {
   shortURL: string;
