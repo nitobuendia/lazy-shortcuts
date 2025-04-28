@@ -4,7 +4,6 @@
   "description": "A Chrome extension to create local custom short URLs.",
   "scripts": {
     "build": "webpack --mode production",
-    "build:dev": "webpack --mode development --watch",
     "package": "node scripts/package.js"
   },
   "devDependencies": {
