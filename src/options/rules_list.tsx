@@ -114,7 +114,7 @@ class UrlRuleRow extends Component<UrlRuleProps, UrlRuleRowState> {
 
   /** Renders the current url mapping row as a form. */
   renderRowAsForm(): ReactNode {
-    return <tr key={this.props.urlMapping.ruleId}>
+    return <>
       <td>
         <input
           type="hidden"
@@ -138,19 +138,19 @@ class UrlRuleRow extends Component<UrlRuleProps, UrlRuleRowState> {
         <button onClick={this.handleSaveEdit}>Save</button>
         <button onClick={this.handleCancelEdit}>Cancel</button>
       </td>
-    </tr>;
+    </>;
   }
 
   /** Renders the current url mapping row as a text row. */
   renderRowAsText(): ReactNode {
-    return <tr key={this.props.urlMapping.ruleId}>
+    return <>
       <td>{this.props.urlMapping.shortUrl}</td>
       <td>{this.props.urlMapping.longUrl}</td>
       <td>
         <button onClick={this.handleEditRule}>Edit</button>
         <button onClick={this.handleDeleteRule}>Delete</button>
       </td>
-    </tr>;
+    </>;
   }
 
   /** Renders the URL mapping row. */
