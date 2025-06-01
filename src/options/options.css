@@ -1,71 +1,154 @@
+:root {
+  --background-color: #101a23;
+  --foreground-color: #edf2f7;
+  --secondary-foreground-color: #90adcb;
+
+  --input-color: #fff;
+  --input-placeholder-color: #7b97b3;
+  --input-background-color: #223649;
+
+  --button-color: #fff;
+  --button-background-color: #223649;
+  --button-background-color-hover: #dce8f3;
+
+  --border-color: #2d3748;
+  --border-color-selected: var(--button-background-color);
+
+  --heading-color: #4a5568;
+}
+
 body {
-  font-family: sans-serif;
-  padding: 20px;
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
+  font-size: 16px;
+  margin: 0;
+  min-width: 600px;
+  padding: 0;
 }
 
-h1, h2 {
-  margin-bottom: 15px;
+main {
+  width: 100%;
 }
 
-#add-form div {
-  margin-bottom: 10px;
-}
-
-label {
-  display: inline-block;
-  width: 100px;
-  text-align: right;
-  margin-right: 10px;
-}
-
-input[type="url"] {
-  width: 300px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+section {
+  margin-top: 0;
+  padding: 1rem 1rem 2rem 1rem;
+  width: calc(100% - 2rem);
 }
 
 button {
-  padding: 10px 15px;
-  background-color: #007bff;
-  color: white;
+  background-color: var(--button-background-color);
   border: none;
-  border-radius: 4px;
+  border-radius: 1rem;
+  color: var(--button-color);
   cursor: pointer;
-  margin-right: 5px;
+  padding: 0.5rem 1rem;
 }
 
 button:hover {
-  background-color: #0056b3;
+  color: var(--button-background-color);
+  background-color: var(--button-background-color-hover);
+}
+
+h2 {
+  color: var(--foreground-color);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 table {
-  width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  border-radius: 1rem;
+  width: 100%;
 }
 
 th, td {
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   padding: 8px;
   text-align: left;
 }
 
 th {
-  background-color: #f2f2f2;
+  background-color: var(--heading-color);
 }
 
-.edit-form input[type="url"] {
-  width: 200px;
+/* all */
+
+#title {
+  color: var(--foreground-color);
+  font-size: 1.25rem;
+  margin: 1rem;
+  text-align: center;
 }
 
-.edit-form button {
-  padding: 5px 10px;
-  font-size: 0.9em;
+.field {
+  margin: 0;
+  padding: 0.5rem;
 }
 
-.edit-form label {
-  width: auto;
-  text-align: left;
-  margin-right: 5px;
+.field input {
+  background-color: var(--input-background-color);
+  border: 1px solid var(--input-border-color);
+  border-radius: 0.5rem;
+  color: var(--input-color);
+  margin: 0;
+  outline: none;
+  padding: 1rem 0.5rem;
+  width: calc(100% - 2 * 1rem);
+}
+
+.field input::placeholder {
+  color: var(--input-placeholder-color);
+}
+
+.field input:hover, .field input:focus {
+  border-color: var(--border-color-selected);
+}
+
+
+/* add_new_form */
+
+#addForm button {
+  margin: 0.5rem 0 0 0.5rem;
+}
+
+/* rules_list */
+
+.shortcut {
+  align-items: center;
+  display: flex;
+  flex-flow: row;
+}
+
+.redirectUrls {
+  box-sizing: border-box;
+  display: flex;
+  margin-left: 0.5rem;
+  flex-flow: column;
+  font-size: 0.9rem;
+  width: 80%;
+}
+
+.shortUrl {
+  display: block;
+  font-weight: 700;
+}
+
+.longUrl {
+  color: var(--secondary-foreground-color);
+  display: block;
+}
+
+.actionButtons {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row;
+  text-align: right;
+  width: 11rem;
+}
+
+.actionButtons button {
+  margin: 0 0.2rem 0 0;
 }

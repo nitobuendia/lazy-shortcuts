@@ -1,8 +1,9 @@
 /** @file Provides a form to add a new redirect. */
 
 import {createRef, Component, ReactNode, RefObject} from 'react';
-import { addNewRule, getRules } from '@app/rules_handler';
+import { addNewRule } from '@app/rules_handler';
 import { OptionsContext } from '@app/options/options_context';
+import { InputField } from '@app/components/input_field';
 
 /** Form that allows to add a new URL redirect. */
 export class AddNewForm extends Component {
@@ -39,31 +40,25 @@ export class AddNewForm extends Component {
 
   /** Renders the form to add new URL redirects. */
   render(): ReactNode {
-    return <>
-      <h2>Add New Redirect</h2>
-      <form onSubmit={this.handleAddRule}>
-        <div>
-          <label htmlFor="shortUrl">Short URL:</label>
-          <input
-            ref={this.shortUrl}
-            type="url"
-            id="shortUrl"
-            required
-            placeholder="http://m"
-          />
-        </div>
-        <div>
-          <label htmlFor="longUrl">Long URL:</label>
-          <input
-            ref={this.longUrl}
-            type="url"
-            id="longUrl"
-            required
-            placeholder="https://mail.google.com"
-          />
-        </div>
+    return <section>
+      <h2>Add New URL Shortcut</h2>
+      <form onSubmit={this.handleAddRule} id="addForm">
+        <InputField
+          id="shortUrl"
+          inputRef={this.shortUrl}
+          type="url"
+          required
+          placeholder="Short URL (e.g. http://m)"
+        />
+        <InputField
+          id="longUrl"
+          inputRef={this.longUrl}
+          type="url"
+          required
+          placeholder="Long URL (e.g. https://mail.google.com)"
+        />
         <button type="submit">Add Redirect</button>
       </form>
-    </>;
+    </section>;
   }
 }

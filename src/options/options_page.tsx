@@ -35,11 +35,11 @@ export class OptionsPage extends Component {
   render() {
     return (
       <OptionsContext.Provider value={this.state}>
-        <div>
-          <h1>Lazy Shortcuts</h1>
+        <main>
+          <h1 id="title">Lazy Shortcuts</h1>
             <AddNewForm />
             <UrlRulesList />
-        </div>
+        </main>
       </OptionsContext.Provider>
     );
   }
