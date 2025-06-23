@@ -65,13 +65,12 @@ you do not see the icon, click on the jigsaw piece to see all the extensions.
         if you want to use the letter `m` as the shortcut, you will add
         `http://m/` as the Short URL and type `m/` on the URL bar to trigger it.
 
-        > [!NOTE]
         > Note that the Short URL is sensitive to http vs https and to the final
-          slash: `http://m`, `https://m`, `http://m/` and `https://m/` are
-          all considered separate URLs. If you want to cover all the cases – with
-          and without slashes, with http and https – you may want to add
-          multiple shortcuts with the different Short URLs and the same Long
-          URLs.
+        > slash: `http://m`, `https://m`, `http://m/` and `https://m/` are
+        > all considered separate URLs. If you want to cover all the cases –
+        > with and without slashes, with http and https – you may want to add
+        > multiple shortcuts with the different Short URLs and the same Long
+        > URLs.
 
     *   **Long URL** represents the website in which you will land when you type
         the Short URL. For example, if you set the short URL to `http://m/` and
