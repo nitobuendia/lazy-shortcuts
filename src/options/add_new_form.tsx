@@ -57,7 +57,7 @@ export class AddNewForm extends Component {
           required
           placeholder="Long URL (e.g. https://mail.google.com)"
         />
-        <button type="submit">Add Redirect</button>
+        <button type="submit">Add Shortcut</button>
       </form>
     </section>;
   }
