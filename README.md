@@ -123,6 +123,16 @@ npm run build
 npm run package
 ```
 
+When you run `npm run build` the extension code will be compiled and placed
+under the folder `./build/`. You can use this code to load the extension into
+Google Chrome ([see installation steps](#installation)). This is useful during
+development to quickly test and iterate changes in the extension.
+
+Alternatively, you may run `npm run package` after the build command to create
+a zip file with the contents. This will place a zip file under `./dist/`. You
+can copy this file to any path that you want, and uncompress it there.
+[See installation steps](#installation) for more information.
+
 ## Legal Disclaimer
 
 *The software is provided "as is", without warranty of any kind, express or
