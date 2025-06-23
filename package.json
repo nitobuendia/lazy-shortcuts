@@ -2,6 +2,7 @@
   "name": "lazy-shortcuts",
   "version": "1.0.0",
   "description": "A Chrome extension to create local custom short URLs.",
+  "license": "Apache-2.0",
   "scripts": {
     "build": "webpack --mode production",
     "package": "node scripts/package.js"
