@@ -1,7 +1,7 @@
 # Lazy Shortcuts
 
 Lazy Shortcuts is a Chrome Extension that allows you to create URL shortcuts for
-your local browser.
+yourself.
 
 For example, you can type `m/` and be redirected to `https://mail.google.com` or
 `go/lazy-shortcuts/` to go to `https://github.com/nitobuendia/lazy-shortcuts`.
@@ -13,9 +13,10 @@ For example, you can type `m/` and be redirected to `https://mail.google.com` or
 ### Use Cases
 
 Lazy Shorcuts is useful to save time in going to certain websites with minimal
-action from your side. Think of it as a bookmark that you type instead of click.
+action from your side. Think of it as a bookmark that you type.
 
-The use cases are as varied as your needs are, but these are some ideas:
+The use cases are as varied as your needs are, but these are some ideas on how
+you can use it:
 
 *   Go to specific documents or articles that you frequently visit.
     Example: open the help center of your bank (`bank/`), the guide for your
@@ -34,7 +35,7 @@ The use cases are as varied as your needs are, but these are some ideas:
 
 ### Installation
 
-1.  Download or build the Chrome Extension zip file.
+1.  [Build the Chrome Extension zip file](#build).
 
 1.  Uncompress the zip files content into a folder.
 
