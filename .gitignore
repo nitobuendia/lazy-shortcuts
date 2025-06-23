@@ -136,3 +136,6 @@ package
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Other.
+.DS_Store
