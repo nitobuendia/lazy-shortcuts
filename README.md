@@ -6,6 +6,8 @@ your local browser.
 For example, you can type `m/` and be redirected to `https://mail.google.com` or
 `go/lazy-shortcuts/` to go to `https://github.com/nitobuendia/lazy-shortcuts`.
 
+![Lazy Shortcuts Preview](./docs/extension-popup.png "Lazy Shorcuts Preview")
+
 ## User Guide
 
 ### Use Cases
