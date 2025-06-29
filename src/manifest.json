@@ -3,6 +3,12 @@
   "name": "Lazy Shortcuts",
   "version": "1.0",
   "description": "Lazy Shortcuts allows you to create local custom short URLs.",
+  "icons": {
+    "32": "img/extension-icon-32.png",
+    "64": "img/extension-icon-64.png",
+    "128": "img/extension-icon-128.png",
+    "256": "img/extension-icon-256.png"
+  },
   "permissions": [
     "storage",
     "declarativeNetRequest",

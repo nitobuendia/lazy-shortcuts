@@ -1,6 +1,8 @@
 # Lazy Shortcuts
 
-Lazy Shortcuts is a Chrome Extension that allows you to create URL shortcuts for
+![Lazy Shortcuts Icon](./src/img/extension-icon-128.png "Lazy Shorcuts Icon")
+
+**Lazy Shortcuts** is a Chrome Extension that allows you to create URL shortcuts for
 yourself.
 
 For example, you can type `m/` and be redirected to `https://mail.google.com` or
@@ -47,11 +49,14 @@ you can use it:
 #### Adding, editing and removing URL Shortcuts
 
 After installing the Chrome Extension, it will appear next to the URL bar. If
-you do not see the icon, click on the jigsaw piece to see all the extensions.
+you do not see the extension icon
+(![Lazy Shortcuts Icon](./src/img/extension-icon-32.png "Lazy Shorcuts Icon")), click on the jigsaw piece to see all the extensions.
 
-1.  Click Lazy Shorcuts extension icon. A popup will open where you can add and
-    change existing URL shortcuts. If you want to manage this is in a new
-    window, you can right click the icon and click "Options".
+1.  Click Lazy Shorcuts extension icon
+    (![Lazy Shortcuts Icon](./src/img/extension-icon-32.png "Lazy Shorcuts Icon")).
+    A popup will open where you can add and change existing URL shortcuts.
+    If you want to manage this is in a new window, you can right click the icon
+    and click "Options".
 
 1.  To add a new URL shortcut, add the Short URL and Long URL under "Add New URL
     Shortcut" and click "Add Shortcut".

@@ -45,6 +45,13 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: 'src/*.json',  to: '[name][ext]' },
+        {
+          from: 'src/img/*.png',
+          globOptions: {
+            ignore: ['src/img/extension-icon-original.png'],
+          },
+          to: 'img/[name][ext]'
+        },
         { from: 'src/options/options.css', to: 'options.css' },
         { from: 'src/options/options.html', to: 'options.html' },
       ],
