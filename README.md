@@ -12,6 +12,15 @@ For example, you can type `m/` and be redirected to `https://mail.google.com` or
 
 ## User Guide
 
+### Installation
+
+1.  [Build the Chrome Extension zip file](#build).
+
+1.  Uncompress the zip files content into a folder.
+
+1.  [Load the unpacked extension](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world#load-unpacked)
+    into Google Chrome.
+
 ### Use Cases
 
 Lazy Shorcuts is useful to save time in going to certain websites with minimal
@@ -34,15 +43,6 @@ you can use it:
 > These URL shortcuts are only available on your local browser. You cannot share
 > the short URLs with others and expect it to work. This is intentional and by
 > design. If you need to share the URL with others, use a URL shortener instead.
-
-### Installation
-
-1.  [Build the Chrome Extension zip file](#build).
-
-1.  Uncompress the zip files content into a folder.
-
-1.  [Load the unpacked extension](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world#load-unpacked)
-    into Google Chrome.
 
 ### Usage
 
