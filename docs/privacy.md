@@ -16,11 +16,7 @@ or third parties either.
 
 Lazy Shorcuts uses the following browser functionality (permissions):
 
-*   `storage` is used to store the short and long URL mapping to know which URL
-    redirects to which website. This data only stays within the browser.
-
-*   `declarativeNetRequest`, `declarativeNetRequestFeedback` and
-    `declarativeNetRequestWithHostAccess` is used to read the URL you have
+*   `declarativeNetRequestWithHostAccess` is used to read the URL you have
     typed, see whether it matches one of the short URLs and, if so, modify the
     HTTP request to redirect you to the long URL instead.
 

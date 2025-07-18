@@ -10,9 +10,6 @@
     "256": "img/extension-icon-256.png"
   },
   "permissions": [
-    "storage",
-    "declarativeNetRequest",
-    "declarativeNetRequestFeedback",
     "declarativeNetRequestWithHostAccess"
   ],
   "host_permissions": [
